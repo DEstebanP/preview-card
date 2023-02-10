@@ -20,7 +20,7 @@ body{
 
 .main-container {
     width: 37rem;
-    height: 80%;
+    max-height: 80%;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
@@ -78,6 +78,7 @@ body{
     display: flex;
     column-gap: 2rem;
     align-items: center;
+    padding-bottom: 2rem;
 }
 .author-info-container p{
     color: var(--white);
