@@ -1,0 +1,98 @@
+:root {
+    --primary-blue: hsl(216, 50%, 16%);
+    --secondary-blue: hsl(215, 32%, 27%);
+    --font-color: hsl(215, 51%, 70%);
+    --font-secondary-color: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+    --background-color: hsl(217, 54%, 11%);
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.8rem;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--background-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-container {
+    width: 37rem;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background-color: var(--primary-blue);
+}
+.main-container * {
+    margin: 0;
+}
+.main-img-container {
+    width: 82%;
+    margin: 2rem auto 0 auto;
+}
+.main-img-container img {
+    width: 100%;
+    border-radius: 1rem;
+}
+.title {
+    color: var(--white);
+    font-size: 2.6rem;
+    margin-left: 2.8rem;
+}
+.title + p {
+    color: var(--font-color);
+    font-weight: 300;
+    margin-left: 2.8rem;
+    line-height: 1.5;
+}
+
+.additional-info-container {
+    display: flex;
+    justify-content: space-around;
+}
+.additional-info-container figure {
+    display: flex;
+}
+.additional-info-container figure:first-child figcaption {
+    color: var(--font-secondary-color);
+    font-weight: 400;
+    margin-left: 1rem;
+}
+.additional-info-container figure:nth-child(2) figcaption {
+    color: var(--font-color);
+    margin-left: 1rem;
+    font-weight: 400;
+}
+.line {
+    margin: 0 8% 0 ;
+    border-color: var(--font-color);
+    opacity: 40%;
+}
+
+.author-info-container {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+}
+.author-info-container p{
+    color: var(--white);
+}
+.author-info-container p span {
+    color: var(--font-color);
+}
+
+.author-img-container {
+    margin-left: 2.8rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 5rem;
+    border: 0.2rem solid var(--white);
+}
+.author-img-container img {
+    width: 100%;
+}
